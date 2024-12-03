@@ -8,10 +8,10 @@ public class CalendarObject {
     private int day;
     private int dayInYear;
     private LocalDate date;
-    private boolean holliday;
+    private boolean holiday;
     private String dayName;
     private String weekday;
-    private int weeknumber;
+    private int weekNumber;
 
     @Override
     public String toString() {
@@ -21,23 +21,23 @@ public class CalendarObject {
                 ", day=" + day +
                 ", dayInYear=" + dayInYear +
                 ", date=" + date +
-                ", holliday=" + holliday +
+                ", holiday=" + holiday +
                 ", dayName='" + dayName + '\'' +
                 ", weekday='" + weekday + '\'' +
-                ", weekNumber=" + weeknumber +
+                ", weekNumber=" + weekNumber +
                 '}';
     }
 
-    public CalendarObject(int year, int month, int day, int dayInYear, LocalDate date, boolean holliday, String dayName, String weekday, int weeknumber) {
+    public CalendarObject(int year, int month, int day, int dayInYear, LocalDate date, boolean holiday, String dayName, String weekday, int weekNumber) {
         this.year = year;
         this.month = month;
         this.day = day;
         this.dayInYear = dayInYear;
         this.date = date;
-        this.holliday = holliday;
+        this.holiday = holiday;
         this.dayName = dayName;
         this.weekday = weekday;
-        this.weeknumber = weeknumber;
+        this.weekNumber = weekNumber;
     }
 
     public int getYear() {
@@ -80,12 +80,12 @@ public class CalendarObject {
         this.date = date;
     }
 
-    public boolean isHolliday() {
-        return holliday;
+    public boolean isHoliday() {
+        return holiday;
     }
 
-    public void setHolliday(boolean holliday) {
-        this.holliday = holliday;
+    public void setHoliday(boolean holiday) {
+        this.holiday = holiday;
     }
 
     public String getDayName() {
@@ -104,11 +104,11 @@ public class CalendarObject {
         this.weekday = weekday;
     }
 
-    public int getWeeknumber() {
-        return weeknumber;
+    public int getWeekNumber() {
+        return weekNumber;
     }
 
-    public void setWeeknumber(int weeknumber) {
-        this.weeknumber = weeknumber;
+    public void setWeekNumber(int weekNumber) {
+        this.weekNumber = weekNumber;
     }
 }
